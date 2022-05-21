@@ -1,6 +1,5 @@
 import { ApiResponse, create } from 'apisauce';
 import Router from 'next/router';
-import { AuthError } from '../pages/api/auth/errors';
 
 export class ApiService {
   static baseURL = process.env.API_BASE_URL;
@@ -36,7 +35,7 @@ export class ApiService {
   static async validate(request) {
     if (request.status === 401) {
       await this.logout();
-      throw new AuthError('The email or password entered is invalid. Please try again.');
+      throw new Error('The email or password entered is invalid. Please try again.');
     }
     if (request.status >= 400) {
       throw request.data;
