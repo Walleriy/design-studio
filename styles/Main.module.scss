@@ -1,10 +1,16 @@
 .main {
   width: 100vw;
 
-  &>img {
+  >.header {
     height: 864px;
-    width: 100%!important;
-    object-fit: cover;
+    background-image: url('../public/images/pexels-saya-kimura-401107.png');
+    background-size: cover;
+    padding: 215px 10px 349px 90px;
+
+    >h3 {
+      color: #FFFFFF;
+      width: 500px;
+    }
   }
 
   >.services {
@@ -56,29 +62,6 @@
     }
 
     >div {
-      h5 {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 17px;
-        line-height: 23px;
-        letter-spacing: 0.07em;
-        text-transform: uppercase;
-        color: #757575;
-      }
-
-      h4 {
-        margin-top: 15px;
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 45px;
-        line-height: 61px;
-        letter-spacing: 0.07em;
-        text-transform: uppercase;
-        color: #1B1717;
-      }
-
       div {
         font-family: 'Open Sans';
         font-style: normal;
@@ -88,5 +71,9 @@
         color: #6E6E6E;
       }
     }
+  }
+
+  >.work {
+    margin-top: 100px;
   }
 }

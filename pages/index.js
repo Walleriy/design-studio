@@ -36,7 +36,10 @@ export default function Main() {
 
   return (
     <div className={styles.main}>
-      <img src="/images/pexels-saya-kimura-401107.png" alt="saya kimura"/>
+      <div className={styles.header}>
+        <h5>вітаємо в кубі</h5>
+        <h3>створіть свій ідеальний дизайн з нами</h3>
+      </div>
       <div className={styles.services}>
         {services.map(serviceItem => service(serviceItem))}
       </div>
@@ -44,9 +47,12 @@ export default function Main() {
         <img src="/images/pexels-thirdman-7181116.png" alt="pexels"/>
         <div>
           <h5>ПРО НАС</h5>
-          <h4>Ми - молода команда, повна ідей та натхнення</h4>
+          <h3>Ми - молода команда, повна ідей та натхнення</h3>
           <div>Ми розробляємо логотипи, рекламні банери і пакування для українських та закордонних компаній. Ми завжди шукаємо компроміс, щоб дизайн відповідав Вашим побажанням і вимогам ринку. Наша мета - допомогти Вашому бізнесу зростати та підтримати українську економіку. В нас в пріоритеті клієнти, тому ми прагнемо підтримувати зв’язок на всіх етапах роботи і приймати рішення разом з Вами.</div>
         </div>
+      </div>
+      <div className={styles.work}>
+
       </div>
     </div>
   )
