@@ -1,0 +1,95 @@
+.contacts {
+  max-height: 830px;
+  padding-top: 100px;
+
+  .upper {
+    position: relative;
+    z-index: 1;
+    margin: 0 98px;
+    background: #757575;
+    height: 532px;
+    padding: 50px 75px;
+
+    h5, h3 {
+      color: #FFFFFF;
+    }
+
+    >div {
+      display: flex;
+      justify-content: space-between;
+      gap: 15%;
+
+      .left {
+        form {
+          input[type=email] {
+            width: 312px;
+            color: #FFFFFF;
+            background: rgba(255, 255, 255, 0.25);
+            padding: 23px 15px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 26px;
+
+            &::placeholder {
+              color: #FFFFFF;
+            }
+          }
+
+          input[type=submit] {
+            display: block;
+            margin-top: 15px;
+            padding: 25px 45px;
+            background: #000000;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+        min-width: 300px;
+
+        div {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 23px;
+          color: #FFFFFF;
+
+          img {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .lower {
+    color: white;
+    height: 464px;
+    margin-top: -266px;
+    background: #1B1717;
+    padding: 0 98px;
+
+    .social_media_links {
+      padding: 306px 0 40px;
+      img {
+        max-height: 35px;
+      }
+    }
+  }
+}

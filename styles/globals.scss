@@ -52,6 +52,15 @@ a {
   color: #1B1717;
 }
 
+@mixin main {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
 h3 {
   margin: 0;
   @include bigTitle;
@@ -67,4 +76,6 @@ h5 {
   @include smallTitle;
 }
 
-
+p {
+  @include main;
+}
