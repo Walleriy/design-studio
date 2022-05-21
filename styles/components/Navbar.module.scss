@@ -33,6 +33,7 @@
   &_item {
     @include logoTypography;
     color: white;
+    white-space: nowrap;
   }
 
   &>nav {
