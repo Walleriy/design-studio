@@ -1,0 +1,79 @@
+.main {
+  width: 100vw;
+
+  >.header {
+    height: 864px;
+    background-image: url('../public/images/pexels-saya-kimura-401107.png');
+    background-size: cover;
+    padding: 215px 10px 349px 90px;
+
+    >h3 {
+      color: #FFFFFF;
+      width: 500px;
+    }
+  }
+
+  >.services {
+    display: flex;
+    margin: -97px 120px 0;
+
+    .service {
+      flex-basis: 33%;
+      opacity: 80%;
+      background: rgba(117, 117, 117, 0.6);
+      padding: 30px 25px 18px 30px;
+
+      &:nth-child(2) {
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      h2 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 0;
+        margin-bottom: 53px;
+      }
+
+      .content {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin-bottom: 13px;
+      }
+    }
+  }
+
+  >.about {
+    margin: 100px 90px 0;
+    display: flex;
+    gap: 30px;
+
+    >img {
+      flex-basis: 50%;
+    }
+
+    >div {
+      div {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 23px;
+        color: #6E6E6E;
+      }
+    }
+  }
+
+  >.work {
+    margin-top: 100px;
+  }
+}
